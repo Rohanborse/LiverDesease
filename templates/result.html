@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liver Disease Result</title>
+</head>
+
+<body>
+
+    <div class="container">
+            <h2 class='container-heading'><span class="heading_font">Liver Disease Prediction</span></h2>
+
+        <br><br><br><br><br><br><br>
+
+        <!-- Result -->
+		<div class="results">
+			{% if predict==1 %}
+				<h1><span class='danger'>Oops! 🙁<br><br>You have LIVER DISEASE <br><br>Please Consult a Doctor.</span></h1>
+
+			{% elif predict==0 %}
+				<h1><span class='safe'>🤩 Congratulation! 🤩<br><br>You DON'T have LIVER DISEASE.</span></h1>
+
+			{% endif %}
+		</div>
+
+    </div>
+    <div>
+            <br><br> <br><br><br><br><br><br><br><br>
+
+            <p class='footer-description'>@2023Cdac_Rohan_Borse</p>
+
+    </div>
+
+
+<style>
+
+
+</style>
+
+
+</body>
+
+</html>
