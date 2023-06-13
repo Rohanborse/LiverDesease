@@ -10,7 +10,7 @@ model = pickle.load(open('decision_tree_model.pkl', 'rb'))
 
 @app.route('/')
 def Home():
-    return render_template('index.html')
+    return render_template('templates/index.html')
 
 
 @app.route("/predict", methods=['POST', 'GET'])
