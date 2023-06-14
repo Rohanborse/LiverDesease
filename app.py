@@ -35,7 +35,7 @@ def predict():
 
         prediction = model.predict(values1)
 
-        return render_template('result.html', predict=prediction)
+        return render_template('templates/result.html', predict=prediction)
 
 
 if __name__ == "__main__":
